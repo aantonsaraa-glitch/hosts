@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+echo "Alex"
+
 # valid_ip <host> <ip> <dns_server>
 valid_ip() { dig +short "$1" "@$3" | grep -qxF "$2"; }
+
 
 dns=${1:-8.8.8.8}
 
